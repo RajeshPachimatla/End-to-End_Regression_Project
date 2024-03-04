@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hyderabad House Rent Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	<h2>Area (Square Feet)</h2>
+    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+	<h2>BHK</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+		<label for="radio-bhk-1">1</label>
+		<input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+		<label for="radio-bhk-2">2</label>
+		<input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+		<label for="radio-bhk-3">3</label>
+		<input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+		<label for="radio-bhk-4">4</label>
+	</div>
+	</form>
+<form class="form">
+	<h2>Furnish</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-furn-1" name="uiFurnish" value="1"/>
+		<label for="radio-furn-1">Unfurnished</label>
+		<input type="radio" id="radio-furn-2" name="uiFurnish" value="2" checked/>
+		<label for="radio-furn-2">Semi-Furnished</label>
+		<input type="radio" id="radio-furn-3" name="uiFurnish" value="3"/>
+		<label for="radio-furn-3">Furnished</label>
+	</div>
+		<h2>Location</h2>
+	<div>
+  <select class="location" name="" id="uiLocations">
+    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>Electronic City</option>
+        <option>Rajaji Nagar</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimateRent()" type="button">Estimate House Rent</button>
+	<div id="uiEstimatedRent" class="result">	<h2></h2> </div>
+</body>
+</html>
