@@ -8,3 +8,5 @@ DataFrame of the project as follows:
 4. This python flask server will expose http ednpoints for various requests and ui returns in html/css/javascript 
 
 Following the screen shot of the webpage which I run on the localserver
+
+![HRP_deployed](https://github.com/RajeshPachimatla/End-to-End_Regression_Project/assets/138550334/211af1fd-d119-4c58-a1dc-4f5f7333511b)
